@@ -25,19 +25,15 @@ python SlacklinePlacement.py instance_{parc name}.csv
 
 Outputs a csv file containing the pairs of tree indexes from within the instance\_{parc name}.csv in file named :
 
-```
-resultat_instance_{parc name}.csv
-```
+> resultat*instance*{parc name}.csv
 
 More information can be found printed on the console
 
-```
-num of trees in parc :
-num of possible slacklines :
---- execution time  : 0.00 seconds ---
-final distance covered :
-num of slacklines in solution :
-```
+> num of trees in parc :
+> num of possible slacklines :
+> --- execution time : 0.00 seconds ---
+> final distance covered :
+> num of slacklines in solution :
 
 ## Contributing
 
