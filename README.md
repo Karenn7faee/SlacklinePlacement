@@ -8,33 +8,38 @@ Other conditions include:
 
 - A slackline must be attached to trees a and b.
 - Only trees with a minimum diameter of 25cm can hold a slackline
-- The maximum distance a slackline can be is 30m.
-- The minimum distance a slackline must be is 5m.
+- The maximum distance a slackline can be is 30m. distance(a,b) <= 30
+- The minimum distance a slackline must be is 5m. distance(a,b) >= 5
 - Stacklines can not intersect.
 - Multiple slacklines can start from the same tree.
-- Proximity between trees can be ignored to simplefie the problem.
+- Proximity between trees is ignored to simplify the problem.
 
 ## Usage
 
 Use in terminal by replacing {parc name} with the corresponding file name.
+The csv file instance\_{parc name}.csv must be in the same folder as SlacklinePlacement.py file to produce the correct result file.
 
 ```console
-py .\SlacklinePlacement.py .\instances\instance_{parc name}.csv
+python SlacklinePlacement.py instance_{parc name}.csv
 ```
 
-Results will be produces in file name
+Outputs a csv file containing the pairs of tree indexes from within the instance\_{parc name}.csv in file named :
 
 ```
 resultat_instance_{parc name}.csv
 ```
 
+More information can be found printed on the console
+
+```
+num of trees in parc :
+num of possible slacklines :
+--- execution time  : 0.00 seconds ---
+final distance covered :
+num of slacklines in solution :
+```
+
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+Homework givin in Université de Montréal in the class "Introduction to algorithms".
+All code comments and variables names are in french, only console prints were changed to english before adding to github .
